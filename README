@@ -1,0 +1,3 @@
+1. 激活虚拟环境
+2. 后台启动程序：
+nohup python main_robust.py >main_robust.log 2>&1 &

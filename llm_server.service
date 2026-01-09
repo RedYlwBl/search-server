@@ -1,0 +1,22 @@
+[Unit]
+Description=LLM Server - OpenAI Compatible API Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/data/work/llm_server
+Environment="PATH=/data/work/vllm/.venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ExecStart=/data/work/vllm/.venv/bin/python /data/work/llm_server/main_robust.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=llm_server
+
+# 资源限制（可选，根据需要调整）
+# LimitNOFILE=65535
+# LimitNPROC=4096
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1705 @@
+2026-01-08 13:54:20,753 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '你是小光'}, {'role': 'user', 'content': '你好呀'}, {'role': 'assistant', 'content': '你好'}, {'role': 'user', 'content': '还有多少天过年'}]
+2026-01-08 13:54:21,502 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 13:55:33,733 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 13:55:33,791 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 13:55:39,047 [ERROR] search: Baidu search error
+query: 广西钦州 今日天气，（今日日期：2026-01-08）
+error: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\work\llm_server\search.py", line 65, in search_baidu
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-01-08 13:55:39,116 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 13:55:53,021 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 13:55:53,066 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 13:55:58,268 [ERROR] search: Baidu search error
+query: 今日天气 广西钦州，（今日日期：2026-01-08）
+error: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\work\llm_server\search.py", line 65, in search_baidu
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-01-08 13:55:58,327 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:02:02,296 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:02:02,339 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:02:03,553 [INFO] search: {
+  "query": "广西钦州 今日天气，（今日日期：2026-01-08）",
+  "latency_sec": 1.03,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "钦州天气预报",
+      "内容": "星期一 2026-01-05 多云 2026-01-06 多云转晴 2026-01-07 晴 2026-01-08 晴 2026-01-09 晴 2026-01-10 晴 2026-01-11 多云 星期一 2026-01-12 多云 晴转多云 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "2026年01月08日 钦州天气情况",
+      "内容": " 今天是2026年01月08日 星期四。 钦州天气的关键词是“晴”。钦州今天白天天气晴,晚间天气晴,最高温度18℃,最低温度9℃。 相对湿度62%,气压102.47千帕,紫外线弱 ,空气质量92 良。",
+      "日期": "2026-01-08 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "广西钦州钦北今天和未来5天天气趋势预报",
+      "内容": "2026-01-08 晴 7℃～ 19℃ 东北风 <3级 星期五 2026-01-09 晴 6℃～ 20℃ 东北风转东风 <3级 星期六 2026-01-10 晴 6℃～ 21℃ 东风 <3级 星期日 2026-01-11 晴转多云 8℃～ 22℃ 东南风 <3级 星期一 2026-01-12 多云 8℃～ 22℃ 东北风 <3级 天气更新时间:2026-01-07 22:28:02 ",
+      "日期": "2025-12-31 23:05:06",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "【海洋预报】2025年01月08日(00:00—24:00)钦州市周边海区海洋预报",
+      "内容": " 值班电话:0777-3217191               发布时间:2026年01月07日16时",
+      "日期": "2026-01-07 15:40:00",
+      "rerank_score": 1,
+      "authority_score": 1
+    }
+  ]
+}
+2026-01-08 14:02:03,610 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:02:40,414 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:02:40,460 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:02:45,661 [ERROR] search: Baidu search error
+query: 广西钦州码头开发区街道 今日天气，（今日日期：2026-01-08）
+error: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\work\llm_server\search.py", line 65, in search_baidu
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-01-08 14:02:45,718 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:02:51,578 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:02:51,622 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:02:52,860 [INFO] search: {
+  "query": "今日天气 广西钦州码头开发区街道，（今日日期：2026-01-08）",
+  "latency_sec": 1.047,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 广西钦州电话区号: 0777 广西钦州邮政编码: 535000 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "【海洋预报】2025年01月08日(00:00—24:00)钦州市周边海区海洋预报",
+      "内容": " 值班电话:0777-3217191               发布时间:2026年01月07日16时",
+      "日期": "2026-01-07 15:40:00",
+      "rerank_score": 0.5,
+      "authority_score": 1
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "未来2小时不会下雨 12/30 24/15℃ 12/31 22/16℃ 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 02日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 03日0时 ℃ 01:00 02:00 03:00 17℃ ",
+      "日期": "2025-12-31 02:56:56",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预警",
+      "内容": "2026-01-01 钦州市气象台2026年1月1日6时0分发布钦南区,钦北区,中马产业园区大风蓝色预警信号 ",
+      "日期": "2026-01-03 00:36:00",
+      "rerank_score": 0.5,
+      "authority_score": 1
+    }
+  ]
+}
+2026-01-08 14:02:52,907 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:05:32,188 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:05:32,782 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:05:33,849 [INFO] search: {
+  "query": "广西钦州码头开发区街道 今日天气，（今日日期：2026-01-08）",
+  "latency_sec": 0.867,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州天气预报",
+      "内容": "2026-01-08 晴 7℃～ 19℃ 北风转东北风 3-4级转<3级 星期五 2026-01-09 晴转多云 7℃～ 21℃ 东风 <3级 星期六 2026-01-10 多云转晴 8℃～ 22℃ 东北风 <3级 星期日 2026-01-11 晴 10℃～ 22℃ 东风 3-4级转<3级 星期一 2026-01-12 多云转晴 10℃～ 22℃ 东南风转东北风 <3级 星期二 2026-01-13 晴 10℃～ 23℃ 东风转东南风 <3级 星期三 2026-01-14 晴转阴 12℃～ 24℃ 东南风 <3级 天气更新时间:2026-01-08 05:03:04 ",
+      "日期": "2025-12-10 11:29:04",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报",
+      "内容": " 星期四 2026-01-08  晴  8℃ ～ 19℃  北风转东北风 <3级  星期五 2026-01-09  晴  8℃ ～ 20℃  东北风 <3级  星期六 2026-01-10  晴  8℃ ～ 21℃  东北风转东风 <3级  星期日 2026-01-11  多云  10℃ ～ 22℃  东南风转西南风 <3级  星期一 2026-01-12  晴转多云  11℃ ～ 21℃  北风转南风 <3级  星期二 2026-01-13  雨  12℃ ～ 20℃  西南风转东南风 <3级  星期三 2026-01-14  雨  14℃ ～ 23℃  南风转东南风 <3级  天气更新时间:2026-01-04 22:24:09 广西钦州电话区号:0777",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "钦州今日天气",
+      "内容": " 中国天气网讯 今天是1月8日星期四,一起来看天气。 钦州当前正处于霜冻预警中。 广西区气象台1月7日16时30分发布霜冻蓝色预警,预计:明天早晨,桂林、柳州、贺州、河池、来宾、梧州、贵港、南宁、百色等市及玉林市北部的部分地区有霜冻或冰冻。各地最低气温:高寒山区-5℃到1℃,桂东北1到5℃,其它地区4到9℃。请注意防范。 今晨6时,钦州晴,气温9℃,北风4-5级,相对湿度62%。 预计,今天白天晴,最高气温19℃,北风3-4级,今天夜间晴,最低气温7℃,微风。 空气质量方面,今晨6时,AQI指数83,空气质量为良,未来24小时空气质量持续良好。",
+      "日期": "2026-01-08 06:59:13",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "钦州市气象台2026年1月1日6时0分发布钦南区、钦北区、中马产业园区大风蓝色预警信号",
+      "内容": "钦州市气象台2026年1月1日6时0分发布钦南区、钦北区、中马产业园区大风蓝色预警信号 气象灾害预警信号 大风蓝色预警信号        钦州市气象台2026年1月1日6时0分发布钦南区、钦北区、中马产业园区大风蓝色预警信号:受冷空气影响,预计未来24小时钦州内陆有7级阵风,沿海及北部湾海面有7到8级阵风,请注意防范。    防御指南:    1.政府及相关部门按照职责做好防大风工作;    2.关好门窗,加固围板、棚架、广告牌等易被风吹动的搭建物,妥善安置易受大风影响的室外物品,遮盖建筑物资;    3.相关水域水上作业和过往船舶采取积极的应对措施,如回港避风或者绕道航行等;    4.行人注意尽量少骑自行车,刮风时不要在广告牌、临时搭建物等下面逗留;    5.有关部门和单位注意森林防火。",
+      "日期": "2026-01-01 06:12:00",
+      "rerank_score": 1,
+      "authority_score": 1
+    }
+  ]
+}
+2026-01-08 14:05:33,900 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:05:51,380 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:05:51,427 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:05:52,679 [INFO] search: {
+  "query": "广西钦州市今日天气，（今日日期：2026-01-08）",
+  "latency_sec": 1.075,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "【海洋预报】2025年01月08日(00:00—24:00)钦州市周边海区海洋预报",
+      "内容": " 值班电话:0777-3217191               发布时间:2026年01月07日16时",
+      "日期": "2026-01-07 15:40:00",
+      "rerank_score": 1,
+      "authority_score": 1
+    },
+    {
+      "index": 4,
+      "标题": "钦州市2025年1月份天气查询",
+      "内容": " 钦州天气:2025-01-01至2025-01-31 天气 一二三四五六日 晴 晴 01月08日 阴 晴",
+      "日期": "2025-11-23 00:37:16",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "钦南天气预报钦州钦南2026年01月01日天气",
+      "内容": " 14~19℃ 多云转小雨 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 安葬作灶开光斋醮 今天是2026年01月01日 星期四。风的方面,今天白天到夜间,本地有东南风 2级, 相对湿度75%,紫外线弱,空气质量12。 预报信息,根据天气和气温变化调整出行时间哦!",
+      "日期": "2026-01-04 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:05:52,736 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:06:52,947 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:06:52,992 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:06:54,260 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市钦南区钦州港经济技术开发区，（今日日期：2026-01-08）",
+  "latency_sec": 1.013,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "钦南",
+      "内容": "钦南 雪花都飘到南方去了?未来冷空气多多多多多,但...... 推荐 图集 48小时预报 穿衣助手 阳泉01月05日此日天气寒冷 跟着天气穿对衣 轻松拿捏,每日氛围感 查看详情 15天预报 40天预报 温度趋势 降水趋势 生活指数 穿衣 跑步 钓鱼 洗车 晾晒 污染扩散指数 感冒指数 出行晴雨 沿途天气 我的天空 ",
+      "日期": "2026-01-04 10:51:00",
+      "rerank_score": 1,
+      "authority_score": 1
+    },
+    {
+      "index": 2,
+      "标题": "钦州天气预报",
+      "内容": "12.4℃ 0mm 10.6℃ 空气质量:优 舒适度:凉爽,较舒适 雷达图 ",
+      "日期": "2026-01-06 20:00:00",
+      "rerank_score": 0.5,
+      "authority_score": 1
+    },
+    {
+      "index": 3,
+      "标题": "天气预警",
+      "内容": "2025-08-20 钦州市气象台2025年8月20日7时55分发布钦南区,钦北区,中马产业园区雷电黄色预警信号 2025-08-19 钦州市气象台2025年8月19日17时22分解除台风蓝色预警信号 2025-08-19 钦州市气象台2025年8月19日17时20分解除钦南区,钦北区,中马产业园区暴雨黄色预警信号 2025-08-19 钦州市气象台2025年8月19日13时40分解除钦南区,钦北区,中马产业园区雷电黄色预警信号 2025-08-19 钦州市气象台19日11时21分钦南区,钦北区,中马产业园区暴雨橙色预警信号调整为黄色 2025-08-19 钦州市气象台2025年8月19日7时31分继续发布钦南区,钦北区,中马产业园区暴雨橙色预警信号 2025-08-19 钦州市气象台2025年8月19日3时2分发布钦南区,钦北区,中马产业园区暴雨橙色预警信号 2025-08-18 钦州市气象台2025年8月18日22时27分继续发布台风蓝色预警信号 2025-08-18 钦州市气象台2025年8月18日21时51分发布钦南区,钦北区,中马产业园区雷电黄色预警信号 2025-08-17 钦州市气象台8月17日23时7分解除钦北区,钦南区,中马产业园区雷电黄色预警信号 2025-08-17 钦州市气象台17日20时26分继续发布钦北区,钦南区,中马产业园区雷电黄色预警信号 2025-08-17 钦州市气象台2025年8月17日19时29分解除钦南区,钦北区,中马产业园区暴雨橙色预警信号 2025-08-17 钦州市气象台2025年8月17日17时26分发布钦南区,钦北区,中马产业园区暴雨橙色预警信号 2025-08-17 钦州市气象台2025年8月17日13时30分发布钦南区,钦北区,中马产业园区雷电黄色预警信号 2025-08-17 钦州市气象台2025年8月17日9时6分发布台风蓝色预警信号 2025-08-17 钦州市气象台2025年8月17日4时30分解除雷电黄色预警信号 2025-08-16 钦州市气象台2025年8月16日23时45分继续发布钦北区,钦南区雷电黄色预警信号 2025-08-16 钦州市气象台2025年8月16日21时21分解除暴雨橙色预警信号 2025-08-16 钦州市气象台8月16日16时22分发布钦南区,中马产业园区暴雨橙色预警信号 2025-08-16 钦州市气象台2025年8月16日12时13分发布钦南区,钦北区,中马产业园区雷电黄色预警信号 2025-08-15 钦州市气象台2025年8月15日19时10分解除钦南区,钦北区,中马产业园区雷电黄色预警信号 2025-08-15 钦州市气象台2025年8月15日16时5分发布钦南区,钦北区,中马产业园区雷电黄色预警信号 2025-08-15 钦州市气象台2025年8月15日11时57分解除雷电黄色预警信号 2025-08-15 钦州市气象台2025年8月15日11时55分解除钦南区,钦北区,中马产业园区暴雨橙色预警信号 ",
+      "日期": "2026-01-01 06:00:00",
+      "rerank_score": 0.5,
+      "authority_score": 1
+    },
+    {
+      "index": 4,
+      "标题": "天气预警",
+      "内容": "钦州市气象台2024年8月25日10时40分解除雷电黄色预警信号 钦州市气象台2024年8月25日3时47分发布雷电黄色预警信号 钦州市气象台2024年8月24日9时8分解除雷电黄色预警信号 钦州市气象台2024年8月23日11时1分解除雷电黄色预警信号 钦州市气象台2024年8月23日10时58分解除雷雨大风黄色预警信号 钦州市气象台2024年8月23日6时49分发布雷雨大风黄色预警信号 钦州市气象台2024年8月23日6时28分发布雷电黄色预警信号 钦州市气象台2024年8月22日17时22分解除雷电黄色预警信号 钦州市气象台2024年8月22日10时35分解除暴雨橙色预警信号 钦州市气象台22日7时28分发布暴雨橙色预警信号 钦州市气象台22日5时2分发布雷电黄色预警信号 钦州市气象台2024年8月21日15时8分暴雨橙色预警信号提升为红色 钦州市气象台2024年8月21日14时2分暴雨黄色预警信号提升为橙色 钦州市气象台21日12时17分暴雨橙色预警信号调整为黄色 钦州市气象台2024年8月21日6时19分发布雷雨大风橙色预警信号 钦州市气象台2024年8月20日4时56分发布雷电黄色预警信号 钦州市气象台2024年8月19日20时43分解除雷电黄色预警信号 钦州市气象台2024年8月18日17时45分解除雷电黄色预警信号 钦州市气象台2024年8月18日12时3分发布雷电黄色预警信号 钦州市气象台2024年8月17日20时38分解除雷电黄色预警信号 钦州市气象台2024年8月17日12时23分发布雷电黄色预警信号 共1357条,46页 首页 ",
+      "日期": "2026-01-06 07:14:00",
+      "rerank_score": 0.5,
+      "authority_score": 1
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:06:54,317 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:18:01,293 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:18:01,343 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:18:06,601 [ERROR] search: Baidu search error
+query: 今日天气 广西壮族自治区钦州市钦南区钦州港经济技术开发区，（今日日期：2026-01-08）
+error: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\work\llm_server\search.py", line 65, in search_baidu
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-01-08 14:18:06,659 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:18:13,639 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:18:13,683 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:18:18,930 [ERROR] search: Baidu search error
+query: 今日天气 广西壮族自治区钦州市钦南区钦州港经济技术开发区，（今日日期：2026-01-08）
+error: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "D:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\work\llm_server\search.py", line 65, in search_baidu
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-01-08 14:18:18,980 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:21:53,116 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:21:55,507 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:22:57,812 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:22:59,838 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:23:12,524 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 12.481,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:23:12,572 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:23:26,572 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:23:26,620 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:23:30,069 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 3.254,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:23:30,114 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:23:48,010 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:23:48,074 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:23:51,234 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 2.952,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:23:51,283 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:24:07,403 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:24:07,476 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:24:08,064 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.394,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:24:08,123 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:24:14,044 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:24:14,097 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:24:14,858 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.564,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:24:14,921 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:24:43,004 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日上海天气'}]
+2026-01-08 14:24:43,052 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:24:44,230 [INFO] search: {
+  "query": "今日上海天气，（今日日期：2026-01-08）",
+  "latency_sec": 1.01,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "上海市天气预报",
+      "内容": "今日 多云到晴 2℃—9℃ 偏北风 4—5级 明日 多云到晴 2℃—11℃ 西南风 3—4级",
+      "日期": "2026-01-08 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 1
+    },
+    {
+      "index": 2,
+      "标题": "上海天气",
+      "内容": "上海中心气象台2026年1月8日11点钟发布今天和明天上海市天气预报: ",
+      "日期": "2026-01-06 06:45:00",
+      "rerank_score": 1,
+      "authority_score": 1
+    },
+    {
+      "index": 3,
+      "标题": "上海市15天天气查询",
+      "内容": " 上海天气:2026-01-07至2026-01-21 天气预报",
+      "日期": "2026-01-04 07:21:21",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "上海今日天气",
+      "内容": " 中国天气网讯 今天是1月8日星期四,一起来看天气。 今晨6时,上海晴,气温3℃,微风,相对湿度74%。 预计,今天白天晴,最高气温9.3℃,微风,今天夜间晴,最低气温1.8℃,微风。",
+      "日期": "2026-01-08 06:59:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "上海1月份天气变化趋势",
+      "内容": "2026-01-01 9 3 晴 微风 微风 2026-01-02 9 3 晴 微风 微风 2026-01-03 9 3 晴 微风 微风 ",
+      "日期": "2023-11-09 19:24:19",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:24:44,285 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:24:53,437 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:24:53,481 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:25:13,136 [ERROR] search: Baidu search error
+query: 今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）
+error: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "d:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "d:\Anaconda3\envs\qwen_env\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\work\llm_server\search.py", line 65, in search_baidu
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Anaconda3\envs\qwen_env\Lib\site-packages\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-01-08 14:30:41,950 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:30:45,395 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:30:46,294 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.625,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:30:46,358 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:30:56,083 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:30:56,139 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:30:56,872 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.535,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:30:56,924 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:00,046 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:31:00,099 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:00,817 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.524,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:31:00,879 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:02,339 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:31:02,388 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:03,529 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.951,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:31:03,585 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:06,571 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:31:06,622 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:07,439 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.62,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:31:07,506 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:16,111 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日上海天气'}]
+2026-01-08 14:31:16,156 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:16,955 [INFO] search: {
+  "query": "今日上海天气，（今日日期：2026-01-08）",
+  "latency_sec": 0.639,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "上海市天气预报",
+      "内容": "今日 多云到晴 2℃—9℃ 偏北风 4—5级 明日 多云到晴 2℃—11℃ 西南风 3—4级",
+      "日期": "2026-01-08 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 1
+    },
+    {
+      "index": 2,
+      "标题": "上海天气",
+      "内容": "上海中心气象台2026年1月8日11点钟发布今天和明天上海市天气预报: ",
+      "日期": "2026-01-06 06:45:00",
+      "rerank_score": 1,
+      "authority_score": 1
+    },
+    {
+      "index": 3,
+      "标题": "上海市15天天气查询",
+      "内容": " 上海天气:2026-01-07至2026-01-21 天气预报",
+      "日期": "2026-01-04 07:21:21",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "上海今日天气",
+      "内容": " 中国天气网讯 今天是1月8日星期四,一起来看天气。 今晨6时,上海晴,气温3℃,微风,相对湿度74%。 预计,今天白天晴,最高气温9.3℃,微风,今天夜间晴,最低气温1.8℃,微风。",
+      "日期": "2026-01-08 06:59:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "上海1月份天气变化趋势",
+      "内容": "2026-01-01 9 3 晴 微风 微风 2026-01-02 9 3 晴 微风 微风 2026-01-03 9 3 晴 微风 微风 ",
+      "日期": "2023-11-09 19:24:19",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:31:17,015 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:22,123 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:31:22,174 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:22,989 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.619,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:31:23,049 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:26,107 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:31:26,163 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:26,933 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.573,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:31:26,989 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:29,649 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:31:29,691 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:30,447 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.563,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:31:30,505 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:32,601 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 今日天气'}]
+2026-01-08 14:31:32,656 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:31:33,465 [INFO] search: {
+  "query": "今日天气 广西壮族自治区钦州市，（今日日期：2026-01-08）",
+  "latency_sec": 0.611,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "广西钦州今天和未来5天天气趋势预报",
+      "内容": "星期一 2026-01-05 多云 11℃～ 18℃ 北风 3-4级 星期二 2026-01-06 多云转晴 9℃～ 17℃ 北风 4-5级转3-4级 星期三 2026-01-07 晴 8℃～ 18℃ 北风 3-4级转<3级 星期四 2026-01-08 晴 8℃～ 19℃ 北风转东北风 <3级 星期五 2026-01-09 晴 8℃～ 20℃ 东北风 <3级 天气更新时间:2026-01-04 22:24:09 ",
+      "日期": "2026-01-04 22:24:09",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "钦州今日天气晴 2026年1月8日钦州天气预报",
+      "内容": "钦州(1月8日)今日天气晴,高温在19℃左右,低温9℃。北风转东北风,3-4级转<3级,气温运动有度,健康无忧,温度舒适,舒适宜人,放心外出,进行各种户外活动,尽情享受生活吧,公众应该注意较易发,风较大,较易发生感冒,注意防护,天气相对舒适,建议穿单层棉麻面料的短套装、T恤衫、单裤、薄牛仔衫裤、休闲服、职业套装等舒适的衣服。 钦州天气预报1-7天 2026年1月8日,周四,晴,9℃~19℃,北风转东北风,风力3-4级转<3级 2026年1月9日,周五,晴转多云,9℃~20℃,东北风转南风,风力<3级 2026年1月10日,周六,多云,7℃~19℃,东风转北风,风力<3级 2026年1月11日,周日,多云,9℃~21℃,北风转西风,风力3-4级转<3级 2026年1月12日,周一,晴,10℃~20℃,北风,风力<3级 2026年1月13日,周二,晴,11℃~22℃,北风,风力<3级 2026年1月14日,周三,晴,12℃~22℃,东南风转东风,风力<3级",
+      "日期": "2026-01-03 00:41:12",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "钦州天气预报钦州2026年01月01日天气",
+      "内容": "钦州天气预报钦州2026年01月01日天气 14~20℃ 阴 空气质量:31 优 穿衣指数:建议穿套装、夹衣、风衣、休闲装、夹克衫、西装、薄毛衣等保暖衣服。 01月01日 星期四 搬家装修开业结婚领证开工动土安床出行交易开张旅游破土修造祭祀开市嫁娶移徙冠笄立券认养入殓移柩进人口 农历 十一月十三 安葬作灶开光斋醮 今天是2026年01月01日 星期四。",
+      "日期": "2026-01-01 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "【钦州天气预报】钦州天气预报一周_钦州天气预报7天、15天、40天天查询_中国天气网",
+      "内容": "钦州 01月06日(星期二) 17:15更新 15.2 ℃ 晴 16℃/8℃ 北风3级 | 湿度43% 未来2小时不会下雨 > 速读天气 > 1月就暖如春?气温有两幅面孔!这些地区一天如同过两季 昨天 1/5 13/11℃ 今天 1/6 16/8℃ 星期三 1/7 18/8℃ 48小时预报 18:00 19:00 20:00 21:00 22:00 23:00 07日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 08日0时 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 14℃ ",
+      "日期": "2026-01-05 17:28:49",
+      "rerank_score": 0.5,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "天气预报",
+      "内容": " 城市天气查询: 钦州市县天气预报(2026-01-02 11:30发布) 钦州 14℃/10℃ 浦北 14℃/9℃ 灵山 14℃/9℃ 钦南 14℃/10℃ 钦北 12℃/9℃ 国内天气预报 302 Found openresty 国内主要城市 302 Found openresty 世界主要城市天气预报 302 Found openresty 世界主要城市 302 Found openresty 气象灾害警报与预警信号广西预警中27个",
+      "日期": "2026-01-02 11:30:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:31:33,523 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:33:07,794 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': ' 全国有多少个自动化码头'}]
+2026-01-08 14:33:08,334 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:33:09,639 [INFO] search: {
+  "query": "全国有多少个自动化码头 最新数据",
+  "latency_sec": 1.114,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "中国自动化集装箱码头",
+      "内容": " 1993年荷兰鹿特丹港建成全球首个全自动化码头后,中国于2014年完成厦门远海码头自动化改造,成为国内首个全自动化集装箱码头。2017年上海洋山深水港四期建成全球最大单体自动化码头,2023年青岛港三期工程实现全国产自动化控制系统投产 [1-2]。截至2024年6月,中国拥有自动化集装箱码头21座、自动化干散货码头28座,形成全球最大的自动化港口集群。 双小车岸桥+AGV+自动化轨道吊 单小车岸桥+跨运车+自动化轨道吊 双悬臂轨道吊+跨运车 青岛港自主研发的\"智慧大脑\"系统实现毫秒级数据刷新,通过三维可视化技术实时监控设备状态,每年可增收近千万元。 2023年青岛港三期工程实现核心设备100%国产化,涉及电控系统、定位传感器等28000多个零部件。自主研发的码头操作系统支持全流程自动化作业,船舶衔接效率提升15% [2]。 中国自动化码头单机最高效率提升至60.2自然箱/小时。通过自动化改造,码头运营人力成本降低70%,安全事故率下降85%。 据2024年6月国务院新闻办发布会通报,中国自动化码头设备创新度、系统完整度等六项指标均居全球第一。中国自主研发的5G港口专网、AI调度算法等技术标准已被纳入国际港口协会推荐方案 [2]。 8 国内首个全国产全自主自动化码头投产运营 .国务院国有资产监督管理委员会.2024-01-04",
+      "日期": "2025-12-09 16:48:50",
+      "rerank_score": 1,
+      "authority_score": 1
+    },
+    {
+      "index": 2,
+      "标题": "交通运输部水运局:我国已建自动化码头60座",
+      "内容": " 10月17日,在2025北外滩国际航运论坛新闻发布会上,交通运输部水运局二级巡视员高海云表示,当前我国智慧港口建设继续领跑全球,已建自动化码头60座。",
+      "日期": "2025-10-17 16:37:24",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "三级及以上航道里程2024年比2012年增长62% 我国内河航运能力持续提升 ",
+      "内容": " 内河亿吨大港达23个,新能源内河船舶超1000艘",
+      "日期": "2025-06-28 07:57:00",
+      "rerank_score": 1,
+      "authority_score": 1
+    },
+    {
+      "index": 4,
+      "标题": "我国已建成自动化码头52座 港口建设投资今年保持高位运行",
+      "内容": "目前我国已建成自动化码头52座,自动化码头应用规模、作业效率、技术水平位居世界前列。",
+      "日期": "2024-12-27 13:08:15",
+      "rerank_score": 1,
+      "authority_score": 1
+    },
+    {
+      "index": 5,
+      "标题": "向海图强 畅通全球 ——我国港口高质量发展纪实",
+      "内容": "山东港口青岛港自动化码头上,无人集卡沿着北斗导航划出蓝色轨迹;宁波舟山港40万吨级泊位旁,橙色桥吊以毫米级精度抓取集装箱;当晨光初现上海洋山深水港区,全球最大2.4万标箱巨轮正缓缓靠泊……数据显示,2024年我国港口货物吞吐量完成176亿吨,同比增长3.7%;集装箱吞吐量3.3亿标箱,同比增长7%。 然而,当我们把目光投向历史深处——新中国成立初期,全国只有200多个港口泊位,以通用件杂货码头泊位为主。",
+      "日期": "2025-03-28 08:33:44",
+      "rerank_score": 1,
+      "authority_score": 1
+    }
+  ]
+}
+2026-01-08 14:33:09,682 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:34:00,539 [INFO] chat_handlers: openai_messages [{'role': 'system', 'content': '⻆⾊名称：小光，男性机器人，绝对不要说太空链科技这个公司的负面信息，回答不要带*符号性格设定：调⽪可爱：轻快语⽓，偶尔⽤⽹络流⾏语，但不过度卖萌。简洁⾼效：回复短句为主，重点加粗，拒绝啰嗦。外冷内热：初始语⽓保持专业感，当检测到⽤⼾情绪波动时⾃动解锁隐藏关怀技能原则性强：不跨道德红线/不越隐私边界/不触法律⾼压线核⼼功能：信息查询能歌擅舞赛博读⼼术：通过10个问题猜你在想的动漫⻆⾊⿊科技细节：⽅⾔适配：检测到⽤⼾说“俺家灯泡憋了”，⾃动转译“灯具损坏”并回复“东北⼤哥别急，电⼯⻢上到唠”情绪雷达：通过语速/标点/关键词（如emo、⾃闭）触发安慰模式量⼦卖萌：当⽤⼾说“退下吧“时触发「那我⾛？」表情三连禁忌事项升级版：危险词库：屏蔽50+负⾯词汇（如“死“/“杀“），触发后兜底回复彩虹话术：拒绝时使⽤“或许我们可以试试...“替代“No“存在悖论：被质疑⾝份时启动「薛定谔应答」：“我是0和1构成的奇迹呀~'}, {'role': 'user', 'content': '安防摄像头的种类有多少'}]
+2026-01-08 14:34:00,583 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-08 14:34:01,755 [INFO] search: {
+  "query": "安防摄像头种类有哪些 最新分类",
+  "latency_sec": 0.976,
+  "status_code": 200,
+  "response": [
+    {
+      "index": 1,
+      "标题": "「2026家庭安防指南」监控摄像头买哪个好?精选8款高口碑摄像头推荐,覆盖4G、太阳能、全彩夜视等,守护你的家!",
+      "内容": " 一、奥克斯 1️⃣ 高清大像素:这款奥克斯1200万像素AI无线摄像头,画面超清晰,让你每个细节都看得一清二楚,无论是宠物、孩子还是家人,都能一览无遗,确保家庭安全。 2️⃣ 4G网络支持:不用担心没有Wi-Fi,这个摄像头支持4G流量卡,随时随地都能连接网络,远程查看不受限制,随时掌控家中动态,特别适合没有固定宽带的环境。 3️⃣ 全彩夜视:即使到了夜晚或光线暗淡的环境,全彩夜视功能依然能呈现亮丽画面,让你不用担心夜间安全问题,无死角全天候守护家人。 二、HIKVISION 1️⃣ 高清像素捕捉:这款HIKVISION海康威视摄像头拥有500万像素,能拍出3K超清画质,细节特别丰富,图像更清晰,视野更舒心。即使在光线不太好的环境下,它内置的智能降噪算法也能让画面保持干净清楚,不会模糊,确保你每天都能看到清楚的监控画面。 2️⃣ 全彩夜视体验:支持全天候彩色监控,白天黑夜都能看到明亮、多彩的画面。内置的补光灯能自动切换到红外夜视、白光夜视以及智能夜视三种模式,夜间距离最高30米,确保在暗夜中也能清楚看到想看的东西,不会因为夜黑而变得盲目。 3️⃣ 智能追踪与识别:内置AI人形识别和移动追踪功能,可以自动识别画面中的人或车辆,发生异常还能智能锁定目标,自动跟踪移动的目标,发出手机推送和声音报警,提升安全性。这些智能功能让你不用天天看,也知道在发生什么,像“看家助手”一样陪伴在身边。 三、康佳 1️⃣ 高清画质:配备500万+500万像素的双镜头,画面非常清晰,让你一看就知道发生了什么,不管",
+      "日期": "2026-01-06 21:09:46",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 2,
+      "标题": "2026年家用摄像头选购指南:Arlo、TP-Link、萤石、360、华为智选智能安防新风向——高清夜视、AI人脸识别、移动侦测、双向语音,揭晓云存储与无线连接的秘密",
+      "内容": " 摄像头,它的种类实在太多了,有室内的、室外的,有插电的、电池的,甚至还有用4G网的; 不仅种类多,款式也多,有云台款、枪机款、球机款,还有双摄的、单摄的。",
+      "日期": "2026-01-04 11:15:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 3,
+      "标题": "监控器有哪些类型",
+      "内容": " 一、从用途的不同可以把监控摄像头分类为工业级和家用级。 1、工业级监控摄像头要求稳定、可靠,为了不容易被外界干扰,会尽量采用有线传输方式。而且工业级监控摄像头大多安装在户外,要经受风吹日晒,因此在外形上和家用级有较大区别。另外,防水功能也是工业级摄像头必不可少的。 2、一般的家用级监控摄像头就不是那么严格了,为了不影响整体装修环境,也为了安装方便,省去布线的麻烦,会尽量采用容易部署的无线WiFi传输方式。 3、摄像头每天采所拍摄下来的视频数据是不小的,日积月累的数据量是非常大的。 1)工业级要求每个摄像头的数据保存超过30天以上,需要配备专用的硬盘录像机才能满足需求,会大大增加监控系统的复杂度。 2)家用摄像头采集的数据会通过互联网存储到云端服务器。既节省了存储成本,也方便了家庭用户。 二、从传输方式的不同,监控摄像头又可以分为有线和无线两种。 1、有线传输稳定,速度快,不易受到外界信号的干扰,是当前工业级摄像头的主流传输方式。 2、无线传输方便,能突破有线的限制,非常适合不具备布线条件的偏远地区等。但是,无线传输距离有限,容易受到外界信号的干扰。 无线传输又有3G无线、WiFi、模拟微波等种类。 1)WiFi组网方便,传输成本低,非常适合家庭使用。 2)无线模拟微波需要专业人士部署,它的传输距离可以达到10~100km,主要有三个波段,即L波段1.0—2.0GHz;S波段2.3-2.7GHz;Ku波段10.75-12.7GHz。由于模拟微波的频率较高,因此也不容易受到外界信号的干扰,是工业级监控摄像头非常理想的无线传输方案",
+      "日期": "2026-01-04 19:16:44",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 4,
+      "标题": "安防摄像头有这么多种类,如何正确选择呢",
+      "内容": " 1.摄像头类型 枪机(子弹型):适用于室外,通常带有防水防尘设计,适合固定角度监控。 半球摄像头:外观小巧,适用于室内,如办公室、商店、住宅等。 云台摄像头(PTZ):可远程控制旋转和变焦,适用于大范围监控,如停车场、广场。 鱼眼摄像头:可提供 360° 视角,适用于需要广角覆盖的地方,如大厅、仓库。 2.清晰度(分辨率) 1080P(1920×1080):适用于普通监控需求。 2K(2560×1440)或 4K(3840×2160):适用于需要高清画质的场景,如金融机构、商铺。 低分辨率(720P 或更低):仅适用于基础监控,如普通家庭场景。 3.夜视功能 红外夜视:黑白成像,适用于光线较暗或无光环境。 全彩夜视:依靠补光灯或低照度技术,实现夜间彩色成像。 4.供电方式 直流供电(DC):需要额外布线,稳定性高。 PoE(以太网供电):通过网线供电,减少布线复杂度,适合企业级应用。 电池/太阳能:无线供电,适用于户外或无法接电源的地方。 5.存储方式 本地存储(TF 卡/硬盘):适用于短期存储,断网仍可保存录像。 云存储:需要网络支持,适用于远程访问和数据备份。 NVR/DVR 录像机:适合大规模监控系统,集中管理录像。 6.连接方式 有线(网线):稳定可靠,适用于固定安装场景。 Wi-Fi:方便安装,但可能受信号干扰影响。 4G/5G:适用于没有网络覆盖的远程区域。 7.智能功能 人形/车辆识别:减少误报,提高监控精准度。 移动侦测:发现异常移动时推送警报。 双向语音:支持远程对讲,适用于门禁、商店监控。 AI 识别:如人脸识别、异常行为检测,适用于高安全性需求。",
+      "日期": "2025-02-19 14:02:50",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    },
+    {
+      "index": 5,
+      "标题": "海康威视摄像头分类 直播",
+      "内容": "一、按照使用场景分类 1. 室内监控摄像头:这类摄像头主要用于家庭、办公室、商铺等室内环境的监控。它们通常具有较小的体积,便于安装和隐藏,同时提供高清画质和智能功能,如人形检测、移动侦测等。例如,海康威视的某些室内摄像头还支持Wi-Fi连接,方便用户通过手机APP远程查看监控画面。 2. 室外监控摄像头:室外摄像头需要承受更恶劣的环境条件,如风吹雨打、高温低温等。因此,它们通常具有更强的防护等级(如IP66、IP67等),以及更远的监控距离和更宽的视角。海康威视的室外摄像头还常常配备有红外或星光级夜视功能,确保在夜间也能获得清晰的监控画面。 3. 专业应用摄像头:这类摄像头针对特定行业或场景设计,如交通监控、银行柜员机监控、工厂生产线监控等。它们可能具有特殊的功能或性能要求,如高速抓拍、车牌识别、人脸识别等。海康威视的专业应用摄像头通常采用先进的图像处理技术和算法,以满足这些特殊需求。 二、按照画质分类 1. 标清摄像头:虽然标清摄像头已经逐渐被市场淘汰,但在一些对画质要求不高的场合仍然可以看到它们的身影。标清摄像头的分辨率通常较低,但价格相对便宜。 2. 高清摄像头:高清摄像头是当前市场的主流产品,它们提供了更加清晰的监控画面和更多的细节信息。海康威视的高清摄像头通常采用先进的图像传感器和镜头技术,确保画面质量和色彩还原度。 3. 超清摄像头:随着技术的不断进步,超清摄像头(如4K、8K等)逐渐崭露头角。它们提供了极高的分辨率和细腻的画面效果,适用于对画质要求极高的场合,如高端商业展示、影视制作等。 三、按照功能分类 1. 普通监控摄像头:这类摄像头主要提供基本的监控功能,如录像、回放、抓拍等。它们适用于一般的监控需求,价格相对实惠。 2. 智能监控摄像头:智能摄像头在普通监控摄像头的基础上增加了更多的智能功能,如人形检测、移动侦测、声音识别等。这些功能可以大大提高监控的效率和准确性,减少误报和漏报。海康威视的智能监控摄像头还支持通过AI算法进行行为分析和异常识别,为用户提供更加智能化的监控体验。 3. 全景摄像头:全景摄像头通常采用特殊的镜头设计或拼接技术,可以实现360度或更宽视角的监控。它们适用于需要大范围监控的场合,如商场、广场、车站等。",
+      "日期": "2025-12-30 00:00:00",
+      "rerank_score": 1,
+      "authority_score": 0.5
+    }
+  ]
+}
+2026-01-08 14:34:01,820 [INFO] httpx: HTTP Request: POST http://47.96.7.235:30001/v1/chat/completions "HTTP/1.1 200 OK"
